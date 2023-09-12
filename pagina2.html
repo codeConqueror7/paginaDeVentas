@@ -82,8 +82,15 @@
             }
             .email-image
             {
-                width: 132px  ;
+                
+                width: 132px;
+                height: 132px;
+                border-radius: 25%;
+                background-color: var(--text-input-field);
+                display: flex;
+                justify-content: center;
             }
+            
             .primary-button 
             {
                 margin-top: 20px;
@@ -122,7 +129,7 @@
                 <p class="subtitle">Please check your inbox for instructions on how to reset the password</p>
                 
                 <div>
-                    <img src="./icons/email.svg" alt="email" class="imgEmail">
+                    <img src="./icons/email.svg" alt="email" class="email-image">
                 </div>
 
                 <button class="primary-button login-button">Login</button>
