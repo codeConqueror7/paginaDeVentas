@@ -64,6 +64,12 @@
                 display: flex;
                 flex-direction: column;
             }
+            .form a
+            {
+                color: var(--hospital-green);
+                font-size: var(--sm);
+                text-align: center;
+            }
             .label
             {
                 font-size: var(--sm);
@@ -115,14 +121,16 @@
                 <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo"/>
 
                 <form action="/" class="form">
+                    <label for="email" class="label">Email</label>
+                    <input type="text"  id="email"   placeholder="Carlos@example.com" class="input input-email">
+
                     <label for="password" class="label">Password</label>
                     <input type="password"  id="password"   placeholder="Password" class="input input-password">
 
-                    <label for="new-password" class="label">Password</label>
-                    <input type="password"  id="password"   placeholder="Password" class="input input-password">
-
-                    <input type="submit" value="Confirm" class="primary-button login-button">
+                    <input type="submit" value="Log in" class="primary-button login-button">
+                    <a href="/">Forgot my password</a>
                 </form>
+                <button class="secondary-button signup-button">Sing up</button>
             </div>
 
 
