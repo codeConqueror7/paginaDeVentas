@@ -48,7 +48,17 @@
         display: flex;
         flex-direction: column;
     }
-    
+    .order
+    {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        background-color: var(--text-input-field);
+        align-items: center;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        padding: 0 24px;
+    }       
     .shopping-cart
     {
         display: grid;
@@ -80,7 +90,7 @@
             <div class="my-order-container">
                 <h1>My order</h1>
                 <div class="my-order-content">
-                    <div>
+                    <div class="order">
                     <p>
                         <span>03.25.21</span>
                         <span>6 articles</span>
