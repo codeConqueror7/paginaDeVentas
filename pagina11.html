@@ -28,6 +28,8 @@
     nav
     {
         display: flex;
+        padding: 0 24px;
+        justify-content: space-between;
     }
     .menu
     {
@@ -41,7 +43,6 @@
     {
     list-style: none;
     padding: 0;
-    margin-top: 24px;
     display: flex;
     align-items: center;
     }
@@ -49,6 +50,37 @@
     {
         display: flex;
     }
+    .navbar-left ul
+    {
+        margin-left: 12px;
+    }
+    .navbar-left ul li a, .navbar-right ul li a
+    {
+        text-decoration: none;
+        color: var(--very-light-pink);
+        padding: 8px;
+        border: 1px solid var(--white);
+        border-radius: 8px;
+    }
+    .navbar-left ul a:hover, .navbar-right ul a:hover
+    {
+        text-decoration: none;
+        color: var(--hospital-green);
+        border: 1px solid var(--hospital-green);
+    }
+    .navbar-shopping-cart div
+    {
+        width: 14px;
+        height: 14px;
+        background-color: var(--hospital-green);
+        border-radius: 50%;
+        font-size: var(--sm);
+        font-weight: bold;
+    }
+    .navbar-shopping-cart 
+    {
+        position: relative;
+    }    
     </style>
 <body>
     <nav>
@@ -67,8 +99,10 @@
         <div class="navbar-right">
         <ul>
             <li>platzi@example.com</li>
-            <li><img src="/icons/icon_shopping_cart.svg" alt=""></li>
-            <div>2</div>
+            <li class="navbar-shopping-cart">
+                <img src="/icons/icon_shopping_cart.svg" alt="" >
+                <div>2</div>
+            </li>
         </ul>
         </div>
     </nav>
